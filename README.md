@@ -21,6 +21,14 @@ Applied-Motion-Analysis-opencv/
 │   ├── extract_calibration_points.py              # Calibration points
 │   ├── images/                # 266 basketball shot frames
 │   └── kalibrasyon.jpg        # Calibration image
+├── color_space_analysis/      # Color space analysis and segmentation
+│   ├── hsv_segmentation.py    # HSV color segmentation
+│   ├── watershed_segmentation.py  # Watershed algorithm
+│   ├── color_tracking.py      # Real-time color tracking
+│   ├── advanced_color_analysis.py  # Advanced color analysis
+│   ├── main_demo.py           # Comprehensive demo
+│   ├── test_images/           # Test images
+│   └── results/               # Output results
 ├── opencv_basics_demo.py      # OpenCV basic functions
 ├── basketball.jpg             # Demo image
 └── LICENSE                    # MIT License
@@ -40,6 +48,13 @@ Applied-Motion-Analysis-opencv/
 - Temporal tracking across frames
 - ROI optimization by cropping 20% from sides
 - Real-world coordinate measurements
+
+### Color Space Analysis
+- HSV color segmentation for object detection
+- Watershed algorithm for separating touching objects
+- Real-time color-based object tracking
+- Advanced color analysis with multiple color spaces
+- Color clustering and harmony analysis
 
 ## Installation
 
@@ -61,6 +76,12 @@ python all_images_2024.py
 cd basketball_shot
 python extract_calibration_points.py
 python basketball_shot_motion_analysis_calibration.py
+```
+
+#### Color Space Analysis
+```python
+cd color_space_analysis
+python main_demo.py
 ```
 
 #### OpenCV Demo
